@@ -1,0 +1,86 @@
+package com.kimtajo.guideMatching;
+
+import android.util.Log;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 9..
+ */
+public class ScheduleList implements Serializable{
+    private ArrayList<Schedule> list;
+    private int cust_no;
+    private int scd_cust_no;
+    final static String server = "http://hellomath.iptime.org/guideMatching/img/"; // server url
+
+    public ScheduleList(int cust_no, int scd_cust_no){
+        this.cust_no = cust_no;
+        this.scd_cust_no = scd_cust_no;
+        this.list = new ArrayList<Schedule>();
+    }
+
+    public String sendScdList(String url){
+        ArrayList<NameValuePair> myGuide = new ArrayList<NameValuePair>();
+        myGuide.add(new BasicNameValuePair("scd_cust_no", ""+this.getScdCustNo()));
+        JSONArray result = HttpPostData.sendPostJSONArray(myGuide, url);
+        if(result != null){
+            for(int i=0;i<result.length();i++){
+                try {
+                    JSONObject json_data = result.getJSONObject(i);
+                    String imgUrl = null;
+                    if(result.getJSONObject(0).isNull("state")){
+                        int no = json_data.getInt("SCD_NO");
+                        String name =json_data.getString("SCD_NAME");
+                        String dateitme = json_data.getString("SCD_DATETIME");
+                        String info = json_data.getString("SCD_INFO");
+                        String place = json_data.getString("SCD_PLACE");
+                        String memo = json_data.getString("SCD_MEMO");
+                        char scd_meet_opn_yn = json_data.getString("SCD_MEET_OPN_YN").charAt(0);
+                        ArrayList<String> meet_name = new ArrayList<String>();
+                        if(!json_data.isNull("MEET_LIST")){
+                            JSONArray arrayMeetList = json_data.getJSONArray("MEET_LIST");
+                            if(arrayMeetList != null){
+                                for(int j=0;j<arrayMeetList.length();j++){
+                                    JSONObject tmp = arrayMeetList.getJSONObject(j);
+                                    meet_name.add(j, tmp.getString("CUST_NICK"));
+                                }
+                            }
+                        }
+
+
+                        this.list.add(i, new Schedule(no, name, dateitme, info, place, memo, scd_meet_opn_yn, meet_name));
+                    }
+                    else if(!result.getJSONObject(0).isNull("state")){
+                        Log.d("list_fail", json_data.getString("state"));
+                        return "list_fail";
+                    }
+                    //return "ok";
+                }
+                catch (JSONException e) {
+                    Log.d("hellomath", "JSONException: "+e.getMessage().toString());
+                    return "error";
+                }
+            }
+            return "ok";
+
+        }
+        else{
+            return "error";
+        }
+
+    }
+
+
+    public int getCustNo(){ return this.cust_no; }
+    public int getScdCustNo(){ return this.scd_cust_no; }
+    public ArrayList<Schedule> getList(){
+        return this.list;
+    }
+
+}

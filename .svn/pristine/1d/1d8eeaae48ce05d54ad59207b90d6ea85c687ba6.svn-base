@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="error" />
+        <option name="name" value="Unnamed-0" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState />
+    </option>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/login.xml">
+        <config>
+          <device>Galaxy Nexus</device>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/start.xml">
+        <config>
+          <device>Galaxy Nexus</device>
+          <theme>@android:style/Theme.NoTitleBar</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="hellomath" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="330fe119-61f3-4d76-b34d-25cd7763abc7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideFriendListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideMainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideRcmListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/guide_friend_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/guide_list_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/guide_main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/myScheduleListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/schedule.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/webViewActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/web_view.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/recommend_item.xml" afterPath="$PROJECT_DIR$/res/layout/rcm_item.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ChangeDateFormat.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/ChangeDateFormat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Custom.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Custom.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Evaluation.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Evaluation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Friend.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Friend.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/FriendList.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/FriendList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/FriendListAdapter.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/FriendListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Guide.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Guide.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/GuideList.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/GuideList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/GuideListAdapter.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/GuideListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/HttpDataGet.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/HttpDataGet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/HttpPostData.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/HttpPostData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ImageDownloader.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/ImageDownloader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Info.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/InfoList.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/InfoList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/InfoListAdapter.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/InfoListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/MyBitmap.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/MyBitmap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/MyLocalManager.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/MyLocalManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/RcmCourse.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/RcmCourse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/RcmCourseList.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/RcmCourseList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/RcmListAdapter.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/RcmListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Schedule.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Schedule.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ScheduleList.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/ScheduleList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ScheduleListAdapter.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/ScheduleListAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/friendActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/friendDetailDialog.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendDetailDialog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guideDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/guideDetailActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guideListActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/guideListActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/infoDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/infoDetailActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/infoListActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/infoListActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/insertEvalDialog.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/insertEvalDialog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/locationActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/locationActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/rcmDetailDialog.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/rcmDetailDialog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/scheduleDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/scheduleDetailActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/scheduleListActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendScheduleListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/insert_eval.xml" afterPath="$PROJECT_DIR$/res/layout/insert_eval.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_view.xml" afterPath="$PROJECT_DIR$/res/layout/list_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/login.xml" afterPath="$PROJECT_DIR$/res/layout/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/loginActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/loginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/schedule_detail.xml" afterPath="$PROJECT_DIR$/res/layout/schedule_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/signupActivity.java" afterPath="$PROJECT_DIR$/src/com/kimtajo/guideMatching/signupActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="guideMatching.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="guideMatching" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="guideMainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideMainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="0" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="1425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert_eval.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/insert_eval.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="32" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1230">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="34" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.19650654" vertical-offset="1170" max-vertical-offset="2085">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guideRcmListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideRcmListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="5" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guideListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/guideListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="44" selection-start="2293" selection-end="3694" vertical-scroll-proportion="0.0" vertical-offset="1185" max-vertical-offset="1365">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guideFriendListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideFriendListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guide_list_view.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/guide_list_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendListAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/FriendListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="59" selection-start="3837" selection-end="3837" vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="1755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Friend.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Friend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="55" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guide_friend_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/guide_friend_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="8" selection-start="2314" selection-end="2333" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1215">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/res/layout/guide_detail.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/FriendList.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/InfoListAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/friend.xml" />
+        <option value="$PROJECT_DIR$/res/layout/friend_to_rcm_detail.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/startActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/guide_item.xml" />
+        <option value="$PROJECT_DIR$/res/layout/friend_detail.xml" />
+        <option value="$PROJECT_DIR$/res/layout/schdule_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ChangeDateFormat.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ScheduleListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/webViewActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/web_view.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/GuideList.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Guide.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/GuideListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guideDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Friend.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/FriendListAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_view.xml" />
+        <option value="$PROJECT_DIR$/res/layout/schedule_detail.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/Schedule.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/friendDetailDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/scheduleListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/infoDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/friendScheduleListActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/schedule.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/locationActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/ScheduleList.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/friendActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/myScheduleListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/scheduleDetailActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/guide/guide_main.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/loginActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/test/test.xml" />
+        <option value="$PROJECT_DIR$/res/layout/guide_main.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/infoDetailActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/guide_list_view.xml" />
+        <option value="$PROJECT_DIR$/res/layout/guide_friend_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideFriendListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Guide.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/FriendList.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/FriendListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Friend.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideMainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideRcmListActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/insert_eval.xml" />
+        <option value="$PROJECT_DIR$/res/layout/login.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guideMatching" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="M1100e6b55bb" />
+    <property name="SearchEverywhereHistory" value="&#10;ㅇㅁㅐㄴ" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAvd0" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kimtajo.guideMatching.guide" />
+      <recent name="com.kimtajo.guideMatching" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/layout" />
+      <recent name="$PROJECT_DIR$/res/layout/guide" />
+      <recent name="$PROJECT_DIR$/src/com/kimtajo/guideMatching" />
+      <recent name="$PROJECT_DIR$/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/res/values" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/layout/test" />
+      <recent name="$PROJECT_DIR$/res/layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kimtajo.guideMatching" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Application.guideMatching">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="guideMatching" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="guideMatching" />
+      <option name="ACTIVITY_CLASS" value="com.kimtajo.guideMatching.loginActivity" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.guideMatching" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="330fe119-61f3-4d76-b34d-25cd7763abc7" name="Default" comment="" />
+      <created>1393948232725</created>
+      <updated>1393948232725</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1397642511118</created>
+      <updated>1397642511118</updated>
+    </task>
+    <task id="LOCAL-00002" summary="foodDetailActivity 만듬">
+      <created>1397644483111</created>
+      <updated>1397644483111</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&#10;">
+      <created>1397644515111</created>
+      <updated>1397644515111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="디테일 뷰 완성">
+      <created>1397801284115</created>
+      <updated>1397801284115</updated>
+    </task>
+    <task id="LOCAL-00005" summary="평가 입력 완성&#10;">
+      <created>1397834667123</created>
+      <updated>1397834667123</updated>
+    </task>
+    <task id="LOCAL-00006" summary="가이드리스트, 가이드 디테일, 가이드의 추천코스 입력 완료">
+      <created>1398793690115</created>
+      <updated>1398793690115</updated>
+    </task>
+    <task id="LOCAL-00007" summary="친구추가, 친구 스케쥴 보기 완료">
+      <created>1398878666116</created>
+      <updated>1398878666116</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32374868" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2960199" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18454936" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18454936" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33498758" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="80" y="476" width="1398" height="312" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19742489" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32012194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2652439" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2621951" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2960199" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18454936" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19808307" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32012194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32374868" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2652439" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18454936" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2621951" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33536586" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="80" y="476" width="1398" height="312" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.157082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="foodDetailActivity 만듬" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="디테일 뷰 완성" />
+    <MESSAGE value="평가 입력 완성&#10;" />
+    <MESSAGE value="가이드리스트, 가이드 디테일, 가이드의 추천코스 입력 완료" />
+    <MESSAGE value="친구추가, 친구 스케쥴 보기 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="친구추가, 친구 스케쥴 보기 완료" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/adt-bundle-mac-x86_64-20131030/sdk/platforms/android-16/android.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="945" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/schdule_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="44" selection-start="1397" selection-end="1408" vertical-scroll-proportion="0.6678832" vertical-offset="144" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/HttpPostData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2836" selection-end="2836" vertical-scroll-proportion="1.2884616" vertical-offset="0" max-vertical-offset="1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/web_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="509" selection-end="509" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="728">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/webViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="1" selection-start="657" selection-end="657" vertical-scroll-proportion="0.4048843" vertical-offset="0" max-vertical-offset="778" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/friend_add.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/GuideList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="42" selection-start="2241" selection-end="2241" vertical-scroll-proportion="-0.0543131" vertical-offset="664" max-vertical-offset="1290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/GuideListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="42" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.14355628" vertical-offset="752" max-vertical-offset="1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/schedule_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="43" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.7762938" vertical-offset="165" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendDetailDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="16" selection-start="2053" selection-end="3152" vertical-scroll-proportion="0.28115016" vertical-offset="589" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Schedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="31" selection-start="3180" selection-end="3180" vertical-scroll-proportion="1.0958467" vertical-offset="469" max-vertical-offset="1380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/schedule.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="51" selection-start="1972" selection-end="1990" vertical-scroll-proportion="0.41145834" vertical-offset="468" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/myScheduleListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="40" selection-start="913" selection-end="913" vertical-scroll-proportion="0.5207668" vertical-offset="4" max-vertical-offset="2130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendScheduleListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="5" selection-start="2639" selection-end="4716" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="1620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/infoListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.40095848" vertical-offset="49" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/adt-bundle-mac-x86_64-20131030/sdk/platforms/android-16/android.jar!/android/location/LocationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="-0.22022839" vertical-offset="210" max-vertical-offset="1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/ScheduleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="9" selection-start="5651" selection-end="5651" vertical-scroll-proportion="1.0511183" vertical-offset="1142" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/lib/MyLocalManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="10" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.83865815" vertical-offset="135" max-vertical-offset="1665" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/ScheduleListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="48" selection-start="2574" selection-end="2574" vertical-scroll-proportion="1.1916933" vertical-offset="4" max-vertical-offset="960" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/scheduleDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="63" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1545" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/location.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="16" selection-start="4489" selection-end="4536" vertical-scroll-proportion="0.7078464" vertical-offset="1256" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Custom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="30" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.57507986" vertical-offset="30" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/info_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.48414025" vertical-offset="310" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.3115016" vertical-offset="0" max-vertical-offset="626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="75" selection-start="784" selection-end="784" vertical-scroll-proportion="0.26357827" vertical-offset="0" max-vertical-offset="626">
+          <folding>
+            <element signature="e#604#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/loginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="88" selection-start="5441" selection-end="5458" vertical-scroll-proportion="0.6916933" vertical-offset="1142" max-vertical-offset="2220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="45" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.7829716" vertical-offset="476" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/infoDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="3148" selection-end="3148" vertical-scroll-proportion="1.314845" vertical-offset="79" max-vertical-offset="1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/friend.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="36" selection-start="2658" selection-end="2658" vertical-scroll-proportion="1.3772955" vertical-offset="135" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/friend_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="34" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.29883137" vertical-offset="331" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="24" selection-start="2230" selection-end="2230" vertical-scroll-proportion="0.39565945" vertical-offset="588" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/info_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.47916666" vertical-offset="189" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/locationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="57" selection-start="7301" selection-end="7301" vertical-scroll-proportion="0.33546326" vertical-offset="1920" max-vertical-offset="2925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="33" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.16319445" vertical-offset="296" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/friendActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="110" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.3323782" vertical-offset="293" max-vertical-offset="1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_list_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideFriendListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/guide_friend_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="8" selection-start="2314" selection-end="2333" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listClass/FriendList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.08945687" vertical-offset="889" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Guide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.23322684" vertical-offset="139" max-vertical-offset="840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/listAdapterClass/FriendListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="59" selection-start="3837" selection-end="3837" vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/dataClass/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="55" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/rcm_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="885" selection-end="885" vertical-scroll-proportion="0.546875" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/rcm_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="40" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-0.7777778" vertical-offset="429" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/guideListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="44" selection-start="2293" selection-end="3694" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/tourist/guideDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="3101" selection-end="3101" vertical-scroll-proportion="0.5273632" vertical-offset="477" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideRcmListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kimtajo/guideMatching/guide/guideMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/insert_eval.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="32" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="34" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.19650654" vertical-offset="1170" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+  </component>
+</project>
+

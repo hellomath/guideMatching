@@ -1,0 +1,25 @@
+package com.kimtajo.guideMatching;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 30..
+ */
+public class Friend extends Guide implements Serializable {
+
+    public Friend(int friend_cust_no, String friend_name, String friend_area, ArrayList<String> friend_use_lang, int friend_chk, String friend_kakao, String friend_detail){
+        super(friend_cust_no, friend_name, friend_area, friend_use_lang, friend_chk, "", friend_kakao, friend_detail);
+
+    }
+
+    public int getFriendCustNo(){ return this.getGuideCustNo(); }
+    public String getFriendName(){ return this.getName(); }
+    public String getFriendArea() { return this.getTourArea(); }
+    public ArrayList<String> getFriendUseLang(){ return this.getUseLang(); }
+    public int getFriendState() { return this.getFriendChk(); }
+    public String getFriendDetail(){ return this.getGuideDetail(); }
+    public String getFriendKakao(){ return this.getGuideKakao(); }
+
+
+}

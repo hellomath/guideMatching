@@ -1,0 +1,79 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.*;
+
+/**
+ * Created by Hellomath on 2014. 4. 16..
+ */
+public class infoDetailActivity extends Activity {
+    private TextView locationView; // 상단 위치 주소
+    private LocationManager locationManager;
+    private MyLocalManager myLocalManager = new MyLocalManager();
+    private final ImageDownloader imageDownloader = new ImageDownloader();
+
+    @Override
+    protected void onResume() {
+        super.onResume();/*
+        Intent intent = getIntent();
+        float ratingData = intent.getFloatExtra("evalPoint", 0);
+        RatingBar eval_point = (RatingBar)findViewById(R.id.itemEvalPointDetail);
+        eval_point.setRating(ratingData);
+        Log.d("hellomath", "gggg");*/
+    }
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.info_detail);
+        Intent intent = getIntent();
+        final myListView item = (myListView)intent.getSerializableExtra("infoDetail");
+        String myLocation = (String)intent.getSerializableExtra("myLocation");
+        final Custom custInfo = (Custom)intent.getSerializableExtra("custInfo"); // 회원 정보를 받아옴
+        final char type = intent.getCharExtra("type", 'n');
+
+
+
+        locationView = (TextView)findViewById(R.id.gpsLocationOfFoodDetail); // 주소 출력 TextView
+        locationView.setText(myLocation);
+        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        myLocalManager.startLocations(locationManager, this, locationView);
+
+        TextView name = (TextView)findViewById(R.id.itemNameDetail);
+        TextView tel = (TextView)findViewById(R.id.itemTelDetail);
+        TextView eval_cnt = (TextView)findViewById(R.id.itemEvalCountDetail);
+        ImageView thumbnail = (ImageView)findViewById(R.id.itemThumbDetail);
+        RatingBar eval_point = (RatingBar)findViewById(R.id.itemEvalPointDetail);
+        TextView addr = (TextView)findViewById(R.id.itemAddrDetail);
+        TextView info = (TextView)findViewById(R.id.itemInfoDetail);
+        ImageButton inputEval = (ImageButton)findViewById(R.id.inputEvalDetail);
+
+        name.setText(item.getName());
+        tel.setText(item.getTelNo());
+        eval_cnt.setText("("+item.getEvalCount()+")");
+        eval_point.setRating((float)item.getEvalPoint());
+        addr.setText(item.getAddr());
+        info.setText(item.getTypeInfo());
+        imageDownloader.setMode(ImageDownloader.Mode.CORRECT);
+        imageDownloader.download(item.getThumbUrl(), thumbnail);
+
+        inputEval.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "String: "+item.getName()+"/"+type, 1000).show();
+                //char type, int typeNo, int custNo, float evalPoint, String evalNote
+                insertEval test = new insertEval(infoDetailActivity.this, new Evaluation(type, item.getTypeId(), custInfo.getCustNo()));
+                test.show();
+
+            }
+        });
+
+
+    }
+
+}

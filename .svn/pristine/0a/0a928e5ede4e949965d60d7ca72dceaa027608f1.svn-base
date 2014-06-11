@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:sl="http://schemas.android.com/apk/res/com.kimtajo.guideMatching"
+              android:id="@+id/login_relative"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".loginActivity"
+              android:background="@drawable/background_img"
+
+        >
+
+    <widget.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_img"
+            android:layout_centerHorizontal="true"
+            sl:scale_base_width="720"
+            sl:scale_base_height="1280"
+            android:layout_centerVertical="true" android:id="@+id/view">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noticeImgBtn"
+                sl:scale_top="128"
+                sl:scale_left="50"
+                sl:scale_height="200"
+                sl:scale_width="660"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/notice1"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ad1ImgBtn"
+                sl:scale_top="365"
+                sl:scale_left="50"
+                sl:scale_height="200"
+                sl:scale_width="660"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ad1"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ad2ImgBtn"
+                sl:scale_top="600"
+                sl:scale_left="50"
+                sl:scale_height="200"
+                sl:scale_width="660"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ad2"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idImg"
+                sl:scale_left="50"
+                sl:scale_top="950"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                android:src="@drawable/id_img"
+                sl:scale_textsize="30" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginId"
+                sl:scale_left="245"
+                sl:scale_top="925"
+                sl:scale_height="100"
+                sl:scale_width="420"
+                sl:scale_textsize="30"
+                android:background="#FFFFFF"
+                android:textColor="@android:color/black" android:text="gptjdwkd"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idImg"
+                sl:scale_left="50"
+                sl:scale_top="1080"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                android:src="@drawable/pwd_img"
+                sl:scale_textsize="80"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginPwd"
+                android:inputType="textPassword"
+                sl:scale_left="245"
+                sl:scale_top="1050"
+                sl:scale_height="100"
+                sl:scale_width="420"
+                sl:scale_textsize="80"
+                android:background="#FFFFFF"
+                android:textColor="@android:color/black" android:text="qqqq"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginImgBtn"
+                sl:scale_left="240"
+                sl:scale_top="850"
+                sl:scale_height="40"
+                sl:scale_width="150"
+                sl:scale_textsize="30"
+                android:text="로그인"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/login_btn"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signImgBtn"
+            sl:scale_left="540"
+            sl:scale_top="850"
+            sl:scale_height="40"
+            sl:scale_width="150"
+            sl:scale_textsize="30"
+            android:text="회원가입"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/signup_btn"/>
+    </widget.ScalableLayout>
+
+</RelativeLayout>
+

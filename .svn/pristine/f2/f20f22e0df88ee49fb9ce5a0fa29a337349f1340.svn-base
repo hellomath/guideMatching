@@ -1,0 +1,124 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.StrictMode;
+import android.util.Log;
+import android.view.View;
+import android.widget.*;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.util.EntityUtils;
+
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Hellomath on 2014. 3. 5..
+ */
+public class signupActivity extends Activity {
+
+
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.signup);
+        final EditText idJoin = (EditText)findViewById(R.id.idJoin);
+        final EditText pwdJoin = (EditText)findViewById(R.id.pwdJoin);
+        final EditText nameJoin = (EditText)findViewById(R.id.nameJoin);
+        final EditText nickJoin = (EditText)findViewById(R.id.nickJoin);
+        final EditText phoneJoin = (EditText)findViewById(R.id.phoneJoin);
+        final EditText nationalJoin = (EditText)findViewById(R.id.nationalJoin);
+        final Spinner custType = (Spinner)findViewById(R.id.typeJoin);
+
+        EditText infOpnJoin = (EditText)findViewById(R.id.infoOpnJoin);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.cust_type, android.R.layout.simple_spinner_item);
+        custType.setAdapter(adapter);
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
+        ImageButton sendJoin = (ImageButton)findViewById(R.id.sendJoinImgBtn);
+        sendJoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Custom joinData =new Custom(
+                idJoin.getText().toString(), pwdJoin.getText().toString(), nameJoin.getText().toString(),
+                        nickJoin.getText().toString(), phoneJoin.getText().toString(), nationalJoin.getText().toString(),
+                        custType.getPrompt().toString(), "Y");
+
+                String url = "http://hellomath.iptime.org/guideMatching/join/saveJoinData.php";
+                joinData.sendJoinData(url);
+
+                /*
+                //public void Custom(String id, String pwd, String name, String nick, String hp_no, String national_code, String type, String inf_opn_yn){
+                String id = idJoin.getText().toString();
+                String pwd = pwdJoin.getText().toString();
+                String name = nameJoin.getText().toString();
+                String nick = nickJoin.getText().toString();
+                String phone = phoneJoin.getText().toString();
+                String national = nationalJoin.getText().toString();
+
+
+                /*
+                ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+                nameValuePairs.add(new BasicNameValuePair("cust_id", id));
+                nameValuePairs.add(new BasicNameValuePair("cust_pwd", pwd));
+                nameValuePairs.add(new BasicNameValuePair("cust_name", name));
+                nameValuePairs.add(new BasicNameValuePair("cust_nick", nick));
+                nameValuePairs.add(new BasicNameValuePair("hp_no", phone));
+                nameValuePairs.add(new BasicNameValuePair("national_code", national));
+                HttpPostData httpPostData = new HttpPostData();
+                String url = "http://27.120.49.241/guideMatching/test.php";
+                String data = httpPostData.sendPost(nameValuePairs, url);
+                Toast.makeText(signupActivity.this, data, 10).show();
+
+                /*
+                HttpClient http = new DefaultHttpClient();
+                try {
+
+                    ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+                    nameValuePairs.add(new BasicNameValuePair("cust_id", id));
+                    nameValuePairs.add(new BasicNameValuePair("cust_pwd", pwd));
+                    nameValuePairs.add(new BasicNameValuePair("cust_name", name));
+                    nameValuePairs.add(new BasicNameValuePair("cust_nick", nick));
+                    nameValuePairs.add(new BasicNameValuePair("hp_no", phone));
+                    nameValuePairs.add(new BasicNameValuePair("national_code", national));
+
+
+                    HttpParams params = http.getParams();
+                    HttpConnectionParams.setConnectionTimeout(params, 5000);
+                    HttpConnectionParams.setSoTimeout(params, 5000);
+
+                    HttpPost httpPost = new HttpPost(url);
+                    UrlEncodedFormEntity entityRequest = new UrlEncodedFormEntity(nameValuePairs, "UTF-8");
+
+                    httpPost.setEntity(entityRequest);
+
+                    HttpResponse responsePost = http.execute(httpPost);
+                    HttpEntity resEntity = responsePost.getEntity();
+
+                    Toast.makeText(signupActivity.this, EntityUtils.toString(resEntity), 10).show();
+                }catch(Exception e){e.printStackTrace();
+                    Toast.makeText(signupActivity.this, e.getMessage().toString(), 10).show();
+
+                }*/
+
+
+            }
+        });
+
+
+    }
+
+}

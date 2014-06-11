@@ -1,0 +1,88 @@
+package com.kimtajo.guideMatching;
+
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
+import android.widget.Toast;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Serializable;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 9..
+ */
+public class Info{
+    private char type;
+    private String nowAddr;
+    private ArrayList<myListView> list;
+    final static String server = "http://hellomath.iptime.org/guideMatching/img/"; // server url
+
+    public Info(char type, String nowAddr){
+        this.type = type;
+        this.nowAddr = nowAddr;
+        this.list = new ArrayList<myListView>();
+    }
+
+    public String sendInfoList(String url){
+        ArrayList<NameValuePair> myInfo = new ArrayList<NameValuePair>();
+        myInfo.add(new BasicNameValuePair("type", ""+this.getType()));
+        myInfo.add(new BasicNameValuePair("nowAddr", this.getNowAddr()));
+        JSONArray result = HttpPostData.sendPostJSONArray(myInfo, url);
+        Log.d("fuck!", "length: "+result.length());
+        if(result != null){
+            for(int i=0;i<result.length();i++){
+                try {
+                    JSONObject json_data = result.getJSONObject(i);
+                    String types = null;
+                    String imgUrl = null;
+                    if(this.type == 'F'){    types = "FOOD_"; imgUrl = "FOOD/"; }
+                    else if(this.type == 'S'){    types = "STAY_"; imgUrl = "STAY/"; }
+                    else if(this.type == 'T'){    types = "TOUR_"; imgUrl = "TOUR/"; }
+                    if(result.getJSONObject(0).isNull("state")){
+                        long no = json_data.getLong(types+"NO");
+                        String name =json_data.getString(types + "NAME");
+                        String addr = json_data.getString(types+"ADDR3")+" "+json_data.getString(types+"ADDR2")+" "+json_data.getString(types+"ADDR1");
+                        String tel = json_data.getString(types + "TEL");
+                        String thumb = server+imgUrl+json_data.getString(types+"THUMB");
+                        this.list.add(i, new myListView(no, name, this.getType(), addr, tel, 3, 1, thumb) );
+                        //Log.d("fuck!", "length: "+result.length());this.list.size();
+                        //return "ok";
+                    }
+                    else if(!result.getJSONObject(0).isNull("state")){
+                        Log.d("list_fail", json_data.getString("state"));
+                        return "list_fail";
+                    }
+                    //return "ok";
+                }
+                catch (JSONException e) {
+                    Log.d("hellomath", "JSONException: "+e.getMessage().toString());
+                    return "error";
+                }
+            }
+            return "ok";
+
+        }
+        else{
+            return "error";
+        }
+
+    }
+
+    public char getType(){
+        return this.type;
+    }
+    public String getNowAddr() { return this.nowAddr; }
+    public ArrayList<myListView> getList(){
+        return this.list;
+    }
+
+}

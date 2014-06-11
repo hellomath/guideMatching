@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:sl="http://schemas.android.com/apk/res/com.kimtajo.guideMatching"
+                android:id="@+id/signupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".signupActivity"
+                android:background="@android:color/darker_gray"
+        >
+    <widget.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            sl:scale_base_width="480"
+            sl:scale_base_height="760"
+            android:layout_centerVertical="true" android:id="@+id/view">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/idString"
+                android:layout_alignTop="@+id/view"
+                sl:scale_left="20"
+                sl:scale_top="10"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/idJoin"
+                sl:scale_left="150"
+                sl:scale_top="10"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pwdString"
+                sl:scale_left="20"
+                sl:scale_top="70"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/pwdJoin"
+                android:inputType="textPassword"
+                sl:scale_left="150"
+                sl:scale_top="70"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nameString"
+                sl:scale_left="20"
+                sl:scale_top="130"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/nameJoin"
+                sl:scale_left="150"
+                sl:scale_top="130"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickString"
+                sl:scale_left="20"
+                sl:scale_top="200"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/nickJoin"
+                sl:scale_left="150"
+                sl:scale_top="200"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneString"
+                android:inputType="phone"
+                sl:scale_left="20"
+                sl:scale_top="270"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/phoneJoin"
+                sl:scale_left="150"
+                sl:scale_top="270"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nationalString"
+                sl:scale_left="20"
+                sl:scale_top="340"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/nationalJoin"
+                sl:scale_left="150"
+                sl:scale_top="340"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custTypeString"
+                sl:scale_left="20"
+                sl:scale_top="410"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/typeJoin"
+                android:prompt="@string/custTypeString"
+                sl:scale_left="150"
+                sl:scale_top="410"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:spinnerMode="dropdown"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoOpnString"
+                sl:scale_left="20"
+                sl:scale_top="480"
+                sl:scale_height="60"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/infoOpnJoin"
+                sl:scale_left="150"
+                sl:scale_top="480"
+                sl:scale_height="60"
+                sl:scale_width="300"
+                sl:scale_textsize="30"
+                android:textColor="@android:color/black"/>
+
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backImgBtn"
+                sl:scale_left="30"
+                sl:scale_top="600"
+                sl:scale_height="100"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:text="로그인"
+                />
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendJoinImgBtn"
+                sl:scale_left="260"
+                sl:scale_top="600"
+                sl:scale_height="100"
+                sl:scale_width="200"
+                sl:scale_textsize="30"
+                android:text="회원가입"
+                />
+
+    </widget.ScalableLayout>
+
+</RelativeLayout>

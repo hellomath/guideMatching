@@ -1,0 +1,44 @@
+package com.kimtajo.guideMatching;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 28..
+ */
+public class Guide implements Serializable {
+
+    private long cust_no;
+    private String name;
+    private String tour_area;
+    private ArrayList<String> use_lang;
+    private String thumb_url;
+    private String guide_kakao;
+    private String guide_detail;
+
+    public Guide(long cust_no, String name, String tour_area, ArrayList<String> use_lang, String thumb_url, String guide_kakao, String guide_detail){
+        this.cust_no = cust_no;
+        this.name = name;
+        this.tour_area = tour_area;
+        this.use_lang = use_lang;
+        this.thumb_url = thumb_url;
+        this.guide_kakao = guide_kakao;
+        this.guide_detail = guide_detail;
+    }
+
+    public long getCustNo(){
+        return this.cust_no;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public String getTourArea(){
+        return this.tour_area;
+    }
+    public ArrayList<String> getUseLang(){
+        return this.use_lang;
+    }
+    public String getThumbUrl(){ return this.thumb_url; }
+    public String getGuideKakao(){ return guide_kakao; }
+    public String getGuideDetail() { return guide_detail; }
+}

@@ -1,0 +1,76 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+
+/**
+ * Created by Hellomath on 2014. 3. 19..
+ * 시작 페이지, 로고를 3초동안 보여준 후 loginActivity로 이동한다.
+ */
+public class startActivity extends Activity {
+    ProgressBar progressBar;
+
+    Handler handler = new Handler(){
+        public void handleMessage(Message msg) {
+
+            progressBar.incrementProgressBy(5);
+
+            super.handleMessage(msg);
+
+        }
+    };
+    Thread thread;
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.start);
+        //ImageView iv = (ImageView)findViewById(R.id.startImageView);
+
+        //Log.d("startActivity", "width: " + iv.getX() + " height: " + iv.getMeasuredHeight());
+    }
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+
+        super.onResume();
+
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        thread =  new Thread(new Runnable() {
+
+            public void run() {
+                // TODO Auto-generated method stub
+                try{
+
+
+                    for(int i=0;i<20;i++)
+                    {
+                        Thread.sleep(100);
+                        handler.sendMessage(new Message());
+                    }
+
+                }
+                catch(InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+
+                startActivity(new Intent(startActivity.this, loginActivity.class));
+
+
+
+
+                startActivity.this.finish();
+            }
+        });
+
+        thread.start();
+
+    }
+}

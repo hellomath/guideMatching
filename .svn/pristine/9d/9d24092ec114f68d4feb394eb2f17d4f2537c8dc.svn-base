@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cust_type">
+        <item>관광객</item>
+        <item>가이드</item>
+    </string-array>
+</resources>

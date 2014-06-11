@@ -1,0 +1,71 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 7..
+ */
+public class GuideListAdapter extends ArrayAdapter<Guide> {
+    private ArrayList<Guide> items;
+    Context mContext;
+    private final ImageDownloader imageDownloader = new ImageDownloader();
+    public GuideListAdapter(Context context, int textViewResourceId, ArrayList<Guide> items){
+        super(context, textViewResourceId, items);
+        this.items = items;
+        mContext = context;
+
+    }
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        View v = convertView;
+        if(v == null){
+            LayoutInflater vi = LayoutInflater.from(mContext.getApplicationContext());
+            v = vi.inflate(R.layout.guide_item, null);
+
+        }
+        Guide item = items.get(position);
+
+
+        if(item != null){
+            TextView name = (TextView)v.findViewById(R.id.guideName);
+            TextView area = (TextView)v.findViewById(R.id.guideArea);
+            TextView use_lang = (TextView)v.findViewById(R.id.guideUseLang);
+            ImageButton add_friend = (ImageButton)v.findViewById(R.id.guideAddFriend);
+
+            if(name != null){ name.setText(item.getName()); }
+            if(area != null) area.setText(item.getTourArea());
+            if(use_lang != null){
+                String langs = "";
+                for(int i=0;i<item.getUseLang().size();i++){
+                    if(i<item.getUseLang().size()-1)
+                        langs += item.getUseLang().get(i)+" / ";
+                    else
+                        langs += item.getUseLang().get(i);
+                }
+                use_lang.setText(langs);
+            }
+            if(add_friend != null){
+                add_friend.setFocusable(false); // listview 내에 button이 있으면 listview의 item이 안눌려짐. 눌러지게 할라면 이거 설정
+                add_friend.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Log.d("hellomath2", "ok");
+
+                    }
+                });
+            }
+        }
+        return v;
+    }
+}

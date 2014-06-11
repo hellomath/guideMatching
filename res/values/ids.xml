@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idJoin" type="id"/>
+    <item name="pwdJoin" type="id"/>
+    <item name="nameJoin" type="id"/>
+    <item name="nickJoin" type="id"/>
+    <item name="phoneJoin" type="id"/>
+    <item name="nationalJoin" type="id"/>
+    <item name="custTypeJoin" type="id"/>
+    <item name="infoOpnJoin" type="id"/>
+</resources>

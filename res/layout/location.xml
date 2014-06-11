@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:sl="http://schemas.android.com/apk/res/com.kimtajo.guideMatching"
+                android:id="@+id/main_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:background="@drawable/background2">
+
+    <widget.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            sl:scale_base_width="720"
+            sl:scale_base_height="1280"
+            android:layout_centerVertical="true"
+            android:id="@+id/view">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gpsLocation"
+                sl:scale_top="30"
+                sl:scale_left="30"
+                sl:scale_height="135"
+                sl:scale_width="675"
+                sl:scale_textsize="50"
+                android:textColor="#343030"
+                android:background="#FFFFFF"
+                android:text="Loading Location.."
+                android:gravity="center"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/food"
+                sl:scale_left="30"
+                sl:scale_top="205"
+                sl:scale_height="330"
+                sl:scale_width="310"
+                sl:scale_textsize="30"
+                android:text="회원가입"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/food"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stay"
+                sl:scale_left="390"
+                sl:scale_top="205"
+                sl:scale_height="330"
+                sl:scale_width="310"
+                sl:scale_textsize="30"
+                android:text="회원가입"
+                android:src="@drawable/stay"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tour"
+                sl:scale_left="30"
+                sl:scale_top="565"
+                sl:scale_height="330"
+                sl:scale_width="310"
+                sl:scale_textsize="30"
+                android:text="회원가입"
+                android:src="@drawable/tour"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guide"
+                sl:scale_left="390"
+                sl:scale_top="565"
+                sl:scale_height="330"
+                sl:scale_width="310"
+                sl:scale_textsize="30"
+                android:text="회원가입"
+                android:src="@drawable/guide"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                sl:scale_left="30"
+                sl:scale_top="1105"
+                sl:scale_height="140"
+                sl:scale_width="140"
+                sl:scale_textsize="30"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/find_area_menu"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/friendOfLocation"
+                sl:scale_left="200"
+                sl:scale_top="1105"
+                sl:scale_height="140"
+                sl:scale_width="140"
+                sl:scale_textsize="30"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/friend_menu"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scheduleOfLocation"
+                sl:scale_left="390"
+                sl:scale_top="1105"
+                sl:scale_height="140"
+                sl:scale_width="140"
+                sl:scale_textsize="30"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/schedule_menu"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/optionOfLocation"
+                sl:scale_left="560"
+                sl:scale_top="1105"
+                sl:scale_height="140"
+                sl:scale_width="140"
+                sl:scale_textsize="30"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/option_menu"/>
+
+    </widget.ScalableLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:sl="http://schemas.android.com/apk/res/com.kimtajo.guideMatching"
+                android:id="@+id/main_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#353030"
+        >
+
+    <widget.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            sl:scale_base_width="720"
+            sl:scale_base_height="200"
+            android:id="@+id/view">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcmSubject"
+                sl:scale_top="0"
+                sl:scale_left="0"
+                sl:scale_height="70"
+                sl:scale_width="675"
+                sl:scale_textsize="50"
+                android:textColor="#FFFFFF"
+                android:text="Recommend Course 1"
+                android:gravity="left"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcmLocation"
+                sl:scale_top="70"
+                sl:scale_left="0"
+                sl:scale_height="50"
+                sl:scale_width="675"
+                sl:scale_textsize="40"
+                android:textColor="#FFFFFF"
+                android:text="Location: Seoul -> Inchone"
+                android:gravity="left"
+                android:singleLine="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                sl:scale_top="120"
+                sl:scale_left="0"
+                sl:scale_height="50"
+                sl:scale_width="675"
+                sl:scale_textsize="40"
+                android:id="@+id/rcmTime"
+                android:text="Times: 5 Hours"
+                />
+
+    </widget.ScalableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Seoul Reviewer</string>
+    <string name="hello_world">hello world</string>
+    <string name="idString">아이디</string>
+    <string name="pwdString">비밀번호</string>
+    <string name="nameString">이름</string>
+    <string name="nickString">닉네임</string>
+    <string name="phoneString">핸드폰번호</string>
+    <string name="nationalString">국가</string>
+    <string name="asd">유형</string>
+    <string name="infoOpnString">정보공개</string><string name="custTypeString">유형</string>
+</resources>

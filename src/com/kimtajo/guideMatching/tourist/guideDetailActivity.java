@@ -1,0 +1,95 @@
+package com.kimtajo.guideMatching.tourist;
+
+import android.app.ListActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.*;
+import com.kimtajo.guideMatching.*;
+import com.kimtajo.guideMatching.dataClass.Custom;
+import com.kimtajo.guideMatching.dataClass.Guide;
+import com.kimtajo.guideMatching.dataClass.RcmCourse;
+import com.kimtajo.guideMatching.lib.ImageDownloader;
+import com.kimtajo.guideMatching.lib.MyLocalManager;
+import com.kimtajo.guideMatching.listAdapterClass.RcmCourseList;
+import com.kimtajo.guideMatching.listAdapterClass.RcmListAdapter;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 16..
+ */
+public class guideDetailActivity extends ListActivity {
+    private TextView locationView; // 상단 위치 주소
+    private LocationManager locationManager;
+    private MyLocalManager myLocalManager = new MyLocalManager();
+    private final ImageDownloader imageDownloader = new ImageDownloader();
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.guide_detail);
+        Intent intent = getIntent();
+        final Guide item = (Guide)intent.getSerializableExtra("guideDetail");
+        String myLocation = (String)intent.getSerializableExtra("myLocation");
+        final Custom custInfo = (Custom)intent.getSerializableExtra("custInfo"); // 회원 정보를 받아옴
+        final RcmCourseList rcmList = (RcmCourseList)intent.getSerializableExtra("rcmList");
+        locationView = (TextView)findViewById(R.id.gpsLocationOfGuideDetail); // 주소 출력 TextView
+        locationView.setText(myLocation);
+
+        if(!myLocation.equals("Detail Friend")){
+            locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+            myLocalManager.startLocations(locationManager, this, locationView);
+        }
+        TextView name = (TextView)findViewById(R.id.guideNameDetail);
+        TextView area = (TextView)findViewById(R.id.guideAreaDetail);
+        TextView useLang = (TextView)findViewById(R.id.guideUseLangDetail);
+        TextView guideDetail = (TextView)findViewById(R.id.guideInfoDetail);
+        ImageView friend = (ImageView)findViewById(R.id.guideAddFriendDetail);
+
+        name.setText(item.getName());
+        area.setText(item.getTourArea());
+        guideDetail.setText(item.getGuideDetail());
+
+        String langs = "";
+        for(int i=0;i<item.getUseLang().size();i++){
+            if(i<item.getUseLang().size()-1)
+                langs += item.getUseLang().get(i)+" / ";
+            else
+                langs += item.getUseLang().get(i);
+        }
+        useLang.setText(langs);
+
+        if(item.getFriendState() == 200 || item.getFriendState() == 000)
+            friend.setImageResource(R.drawable.friend_wait);
+        else if(item.getFriendState() == 100)
+            friend.setImageResource(R.drawable.friend_already);
+        else if(item.getFriendState() == 999)
+            friend.setImageResource(R.drawable.friend_add);
+
+
+        ArrayList<RcmCourse> mlist = new ArrayList<RcmCourse>();
+        if(rcmList != null){
+            mlist.addAll(rcmList.getList());
+            final RcmListAdapter myAdapter = new RcmListAdapter(this, R.layout.rcm_item, mlist);
+            setListAdapter(myAdapter);
+
+            getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                    rcmDetailDialog test = new rcmDetailDialog(guideDetailActivity.this, myAdapter.getItem(position));
+                    test.show();
+
+                }
+            });
+
+        }
+        else{
+            mlist.add(0, new RcmCourse(0, "-", "-", "-"));
+            final RcmListAdapter myAdapter = new RcmListAdapter(this, R.layout.rcm_item, mlist);
+            setListAdapter(myAdapter);
+        }
+    }
+
+}

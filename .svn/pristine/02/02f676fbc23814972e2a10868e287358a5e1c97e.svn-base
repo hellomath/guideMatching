@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:sl="http://schemas.android.com/apk/res/com.kimtajo.guideMatching"
+                android:id="@+id/main_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#353030"
+        >
+
+    <widget.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            sl:scale_base_width="720"
+            sl:scale_base_height="200"
+            android:id="@+id/view">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemThumb"
+                sl:scale_top="0"
+                sl:scale_left="0"
+                sl:scale_height="200"
+                sl:scale_width="200"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemName"
+                sl:scale_top="0"
+                sl:scale_left="220"
+                sl:scale_height="70"
+                sl:scale_width="500"
+                sl:scale_textsize="50"
+                android:textColor="#FFFFFF"
+                android:text="Item Name"
+                android:gravity="left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemTel"
+                sl:scale_top="70"
+                sl:scale_left="220"
+                sl:scale_height="70"
+                sl:scale_width="500"
+                sl:scale_textsize="50"
+                android:textColor="#FFFFFF"
+                android:text="010-0000-0000"
+                android:gravity="left"/>
+
+        <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                sl:scale_top="140"
+                sl:scale_left="220"
+                sl:scale_height="70"
+                sl:scale_width="160"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:id="@+id/itemEvalPoint"
+                style="?android:attr/ratingBarStyleSmall"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemEvalCount"
+                sl:scale_top="120"
+                sl:scale_left="400"
+                sl:scale_height="50"
+                sl:scale_width="150"
+                sl:scale_textsize="45"
+                android:textColor="#FFFFFF"
+                android:text="(123)"
+                android:gravity="left"/>
+
+    </widget.ScalableLayout>
+
+
+</RelativeLayout>

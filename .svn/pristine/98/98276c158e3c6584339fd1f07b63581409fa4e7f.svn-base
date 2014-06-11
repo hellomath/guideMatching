@@ -1,0 +1,130 @@
+package com.kimtajo.guideMatching.tourist;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import com.kimtajo.guideMatching.R;
+import com.kimtajo.guideMatching.dataClass.Custom;
+import com.kimtajo.guideMatching.dataClass.Friend;
+import com.kimtajo.guideMatching.listAdapterClass.RcmCourseList;
+import com.kimtajo.guideMatching.listClass.ScheduleList;
+import com.kimtajo.guideMatching.tourist.friendScheduleListActivity;
+import com.kimtajo.guideMatching.tourist.guideDetailActivity;
+
+/**
+ * Created by Hellomath on 2014. 4. 30..
+ */
+public class friendDetailDialog extends Dialog {
+    private TextView friendInfo;
+    private ImageButton friendChat;
+    private ImageButton friendSchedule;
+    private ImageButton friendDetail;
+    private Friend friend;
+    private Context mContext;
+    private String myLocation;
+    private Custom custInfo;
+    final static String server = "http://hellomath.iptime.org/guideMatching"; // server url
+    public friendDetailDialog(Context context, Friend friend, String myLocation, Custom custInfo) {
+        super(context);
+        mContext = context;
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.friend_detail);
+        this.friend = friend;
+        this.myLocation = myLocation;
+        this.custInfo = custInfo;
+
+    }
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+
+
+        friendInfo = (TextView)findViewById(R.id.friendInfo);
+
+        friendChat = (ImageButton)findViewById(R.id.friendChat);
+        friendSchedule = (ImageButton)findViewById(R.id.friendSchedule);
+        friendDetail = (ImageButton)findViewById(R.id.friendDetail);
+
+        String info = friend.getFriendName()+"\n";
+        for(int i=0;i<friend.getFriendUseLang().size();i++){
+            if(i<friend.getFriendUseLang().size()-1)
+                info += friend.getFriendUseLang().get(i)+" / ";
+            else
+                info += friend.getFriendUseLang().get(i);
+        }
+        Log.d("hellomath2", friend.getFriendState() + "");
+        friendInfo.setText(info);
+
+        friendSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, friendScheduleListActivity.class);
+                String url = server + "/schedule/getScdList.php";
+                ScheduleList scheduleList = new ScheduleList(custInfo.getCustNo(),friend.getFriendCustNo());
+
+                String state = scheduleList.sendScdList(url);
+
+                if (state.equals("ok")) { // 상태값이 ok인 경우 다음 엑티비티로
+                    intent.putExtra("custInfo", custInfo);
+                    intent.putExtra("scdList", scheduleList);
+                    intent.putExtra("friendCustNo", friend.getFriendCustNo());
+
+
+                } else if (state.equals("list_fail")) { // 로그인 실패 시
+                    intent.putExtra("custInfo", custInfo);
+                    intent.putExtra("scdList", scheduleList);
+                    intent.putExtra("friendCustNo", friend.getFriendCustNo());
+                } else { // 그 외 오류
+                    intent.putExtra("custInfo", custInfo);
+                    intent.putExtra("scdList", scheduleList);
+                    intent.putExtra("friendCustNo", friend.getFriendCustNo());
+                }
+                getContext().startActivity(intent);
+                dismiss();
+            }
+        });
+
+
+        friendDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, guideDetailActivity.class);
+                String url = server + "/info/getRcmList.php";
+                RcmCourseList rcmCourseList = new RcmCourseList(friend.getFriendCustNo());
+
+                String state = rcmCourseList.sendRcmList(url);
+
+                if (state.equals("ok")) { // 상태값이 ok인 경우 다음 엑티비티로
+
+                    intent.putExtra("guideDetail", friend);
+                    intent.putExtra("myLocation", myLocation); // 값을 넣어줌
+                    intent.putExtra("custInfo", custInfo);
+                    intent.putExtra("rcmList", rcmCourseList);
+
+
+                } else if (state.equals("list_fail")) { // 로그인 실패 시
+                    intent.putExtra("guideDetail", friend);
+                    intent.putExtra("myLocation", myLocation); // 값을 넣어줌
+                    intent.putExtra("custInfo", custInfo);
+                } else { // 그 외 오류
+                    intent.putExtra("guideDetail", friend);
+                    intent.putExtra("myLocation", myLocation); // 값을 넣어줌
+                    intent.putExtra("custInfo", custInfo);
+                }
+                getContext().startActivity(intent);
+                dismiss();
+
+            }
+        });
+
+
+    }
+}

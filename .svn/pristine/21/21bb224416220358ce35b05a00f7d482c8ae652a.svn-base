@@ -1,0 +1,64 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Activity;
+import android.app.ListActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 5. 1..
+ */
+public class scheduleDetailActivity extends ListActivity {
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.schedule_detail);
+        Intent intent = getIntent();
+        final Schedule item = (Schedule)intent.getSerializableExtra("scdDetail");
+        final Custom custInfo = (Custom)intent.getSerializableExtra("custInfo"); // 회원 정보를 받아옴
+
+
+        TextView name = (TextView)findViewById(R.id.scdNameDetail);
+        TextView datetime = (TextView)findViewById(R.id.scdNameDetail);
+        TextView info = (TextView)findViewById(R.id.scdInfoDetail);
+        TextView entry = (TextView)findViewById(R.id.scdEntryDetail);
+        TextView memo = (TextView)findViewById(R.id.scdMemoDetail);
+
+        name.setText(item.getScdName());
+        ChangeDateFormat cdf = new ChangeDateFormat();
+        String datetimes = cdf.formattedDate(item.getScdDatetime(), "yyyyMMddHHmm", "yyyy-MM-dd HH:mm");
+        datetime.setText(datetimes);
+        info.setText(item.getScdInfo());
+
+
+        ArrayList<String> meetList = new ArrayList<String>();
+        if(item.getScdMeetOpnYn() == 'Y'){
+            entry.setText(item.getMeetList().size()+" peoples");
+
+            if(item.getMeetList().size() > 0)
+                meetList = item.getMeetList();
+            else
+                meetList.add(0, "No Participant");
+        }
+        else{
+            entry.setText("closed");
+            meetList.add(0, "Closed");
+        }
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, meetList);
+        setListAdapter(arrayAdapter);
+        memo.setText(item.getScdMemo());
+
+
+
+    }
+
+}

@@ -1,0 +1,127 @@
+package com.kimtajo.guideMatching.lib;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.graphics.*;
+import android.graphics.Bitmap.Config;
+import android.graphics.PorterDuff.Mode;
+import android.net.Uri;
+import android.provider.MediaStore;
+
+public class MyBitmap {
+	
+	public static String getRealImagePath(Context context, String str)
+	{
+		if (str == "")
+		{
+			return "";
+		}
+		else
+		{
+			String proj[] = { MediaStore.Images.Media.DATA	};
+			//android.app.Activity.
+			Cursor cursor = context.getContentResolver().query(Uri.parse(str), proj, null, null, null);
+			int index = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
+			
+			if(cursor != null && cursor.getCount()>0)
+			{
+				cursor.moveToFirst();
+				String path = cursor.getString(index);
+				return path;
+			}
+			else
+				return "";
+			
+		}
+		
+	}
+	
+	public static Bitmap resizeBitmapImage(Bitmap source, int maxResolution){
+		/*
+		int width = source.getWidth();        
+		int height = source.getHeight();        
+		int newWidth = width;        
+		int newHeight = height;        
+		float rate = 0.0f;
+		
+		Log.d("김혜성", "width : "+width);
+		Log.d("김혜성", "height : "+height);
+		
+		
+		if(width > height){                
+			if(maxResolution < width){                        
+				rate = maxResolution / (float) width;                        
+				newHeight = (int) (height * rate);                        
+				newWidth = maxResolution;                
+				}        
+			}        
+		
+		else{                
+			if(maxResolution < height){                        
+				rate = maxResolution / (float) height;                        
+				newWidth = (int) (width * rate);                        
+				newHeight = maxResolution;                
+				}        
+			} 
+		
+		Log.d("김혜성", "width : "+newWidth);
+		Log.d("김혜성", "height : "+newHeight);
+		
+		return Bitmap.createScaledBitmap(source,newWidth, newHeight, true);
+	
+*/
+		return Bitmap.createScaledBitmap(source, maxResolution, maxResolution, true);
+		
+		}
+	
+	public static Bitmap getRoundedBitmap(Bitmap bitmap) {
+		int s = (bitmap.getWidth()>bitmap.getHeight())? bitmap.getHeight():bitmap.getWidth();
+	    final Bitmap output = Bitmap.createBitmap(s, s, Bitmap.Config.ARGB_8888);
+	    final Canvas canvas = new Canvas(output);
+
+	    final int color = Color.GRAY;
+	    final Paint paint = new Paint();
+	    final Rect rect = new Rect(0, 0,s, s);
+	    final RectF rectF = new RectF(rect);
+
+	    paint.setAntiAlias(true);
+	    canvas.drawARGB(0, 0, 0, 0);
+	    paint.setColor(color);
+	    canvas.drawOval(rectF, paint);
+
+	    paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+	    canvas.drawBitmap(bitmap, rect, rect, paint);
+	  
+	    bitmap.recycle();
+	  
+	    return output;
+	  }
+	
+	
+	public static Bitmap getRoundedCornerBitmap(Bitmap bitmap) {
+	    Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
+                bitmap.getHeight(), Config.ARGB_8888);
+	    Canvas canvas = new Canvas(output);
+
+
+	    final int color = 0xff424242; 
+	    final Paint paint = new Paint();
+	    final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+	    final RectF rectF = new RectF(rect);
+	    final float roundPx = 12; 
+
+
+	    paint.setAntiAlias(true); 
+	    canvas.drawARGB(0, 0, 0, 0); 
+	    paint.setColor(color); 
+	    canvas.drawRoundRect(rectF, roundPx, roundPx, paint); 
+
+
+	    paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+	    canvas.drawBitmap(bitmap, rect, rect, paint); 
+
+
+	    return output; 
+	  } 
+
+}

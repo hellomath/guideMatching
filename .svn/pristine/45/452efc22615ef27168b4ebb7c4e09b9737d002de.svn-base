@@ -1,0 +1,97 @@
+package com.kimtajo.guideMatching;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.location.*;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/**
+ * Created by Hellomath on 2014. 3. 31..
+ * 위치 기반 정보 메인
+ */
+public class locationActivity extends Activity {
+    private TextView locationView; // 상단 위치 주소
+    LocationManager locationManager;
+    MyLocalManager myLocalManager = new MyLocalManager();
+
+    private ImageButton food;
+    private ImageButton stay;
+    private ImageButton tour;
+    private ImageButton guide;
+
+    private ImageButton friend;
+    private ImageButton schedule;
+    private ImageButton option;
+
+    final static String server = "http://hellomath.iptime.org/guideMatching"; // server url
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        myLocalManager.removeGPS(); // GPS 업데이트 중지
+    }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.location);
+        Intent intent = getIntent();
+        final Custom custInfo = (Custom)intent.getSerializableExtra("custInfo"); // 회원 정보를 받아옴
+        Toast.makeText(locationActivity.this, "핸드폰번호: "+custInfo.getHpNo(), 100).show();
+
+        locationView = (TextView)findViewById(R.id.gpsLocation); // 주소 출력 TextView
+
+        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        myLocalManager.startLocations(locationManager, this, locationView);
+        // 위의 2줄은 세트로 다님
+
+        food = (ImageButton)findViewById(R.id.food);
+        stay = (ImageButton)findViewById(R.id.stay);
+        tour = (ImageButton)findViewById(R.id.tour);
+        guide = (ImageButton)findViewById(R.id.guide);
+
+        friend = (ImageButton)findViewById(R.id.friendOfLocation);
+        schedule = (ImageButton)findViewById(R.id.scheduleOfLocation);
+        option = (ImageButton)findViewById(R.id.optionOfLocation);
+
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Info foodList = new Info('F', myLocalManager.getJusoFull());
+                String url = server+"/info/getInfoList.php";
+                String state = foodList.sendInfoList(url);
+
+                if(state.equals("ok")){ // 상태값이 ok인 경우 다음 엑티비티로
+                    Log.d("fuck!", "size: "+foodList.getList().size());
+                    Intent intent = new Intent(locationActivity.this, foodListActivity.class); // 햔재 클래스, 바뀔 클래스
+                    intent.putExtra("myLocation", locationView.getText().toString()); // 값을 넣어줌
+                    intent.putExtra("custInfo", custInfo); // 값을 넣어줌
+                    intent.putExtra("foodList", foodList.getList()); // 값을 넣어줌
+
+                    //Toast.makeText(locationActivity.this, foodList.getList().get(0).getName(), 1000).show();
+                    startActivity(intent); // 변경
+                }
+                else if(state.equals("list_fail")){ // 로그인 실패 시
+                    Toast.makeText(locationActivity.this, "목록 로딩에 실패하였습니다.", 100).show();
+                }
+                else{ // 그 외 오류
+                    Toast.makeText(locationActivity.this, "서버와 연결 할 수 없습니다. 인터넷을 확인 해 주세요.", 100).show();
+                }
+                /*
+                intent.putExtra("nowLatitude", myLocalManager.getMyLatitude());
+                intent.putExtra("nowLongitude", myLocalManager.getMyLongitude());
+                startActivity(intent); // 변경
+                */
+            }
+        });
+
+    }
+}

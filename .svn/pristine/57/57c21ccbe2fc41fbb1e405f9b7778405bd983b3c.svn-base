@@ -1,0 +1,122 @@
+package com.kimtajo.guideMatching.listAdapterClass;
+
+import android.content.Context;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+import com.kimtajo.guideMatching.lib.HttpPostData;
+import com.kimtajo.guideMatching.lib.ImageDownloader;
+import com.kimtajo.guideMatching.R;
+import com.kimtajo.guideMatching.dataClass.Guide;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 7..
+ */
+public class GuideListAdapter extends ArrayAdapter<Guide> {
+    private final ArrayList<Guide> items;
+    Context mContext;
+    private final ImageDownloader imageDownloader = new ImageDownloader();
+    private final int cust_no;
+    final static String server = "http://hellomath.iptime.org/guideMatching"; // server url
+
+    public GuideListAdapter(Context context, int textViewResourceId, ArrayList<Guide> items, int cust_no){
+        super(context, textViewResourceId, items);
+        this.items = items;
+        this.cust_no = cust_no;
+        mContext = context;
+
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        View v = convertView;
+        if(v == null){
+            LayoutInflater vi = LayoutInflater.from(mContext.getApplicationContext());
+            v = vi.inflate(R.layout.guide_item, null);
+
+        }
+        final Guide item = items.get(position);
+
+
+        if(item != null){
+            TextView name = (TextView)v.findViewById(R.id.guideName);
+            TextView area = (TextView)v.findViewById(R.id.guideArea);
+            TextView use_lang = (TextView)v.findViewById(R.id.guideUseLang);
+            final ImageButton add_friend = (ImageButton)v.findViewById(R.id.guideAddFriend);
+
+            if(name != null){ name.setText(item.getName()); }
+            if(area != null) area.setText(item.getTourArea());
+            if(use_lang != null){
+                String langs = "";
+                for(int i=0;i<item.getUseLang().size();i++){
+                    if(i<item.getUseLang().size()-1)
+                        langs += item.getUseLang().get(i)+" / ";
+                    else
+                        langs += item.getUseLang().get(i);
+                }
+                use_lang.setText(langs);
+            }
+            if(add_friend != null){
+                add_friend.setFocusable(false); // listview 내에 button이 있으면 listview의 item이 안눌려짐. 눌러지게 할라면 이거 설정
+
+                if(item.getFriendState() == 200 || item.getFriendState() == 000)
+                    add_friend.setImageResource(R.drawable.friend_wait);
+                else if(item.getFriendState() == 100)
+                    add_friend.setImageResource(R.drawable.friend_already);
+                else if(item.getFriendState() == 999){
+                    add_friend.setImageResource(R.drawable.friend_add);
+                    add_friend.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            ArrayList<NameValuePair> myFriendAdd = new ArrayList<NameValuePair>();
+
+                            myFriendAdd.add(new BasicNameValuePair("guide_cust_no", ""+item.getGuideCustNo()));
+                            myFriendAdd.add(new BasicNameValuePair("cust_no", ""+cust_no));
+
+                            String url = server+"/friend/sendFriendAdd.php";
+                            JSONArray result = HttpPostData.sendPostJSONArray(myFriendAdd, url);
+                            if(result != null){
+                                try {
+                                    JSONObject json_data = result.getJSONObject(0);
+                                    String returnType =json_data.getString("state");
+                                    if(returnType.equals("insert")){
+                                        Toast.makeText(mContext, "친구 신청을 하였습니다.", 100).show();
+                                        add_friend.setImageResource(R.drawable.friend_wait);
+                                        item.setFriendState(200);
+                                    }
+                                    else if(returnType.equals("already")){
+                                        Toast.makeText(mContext, "이미 신청을 하셨습니다.", 100).show();
+                                        add_friend.setImageResource(R.drawable.friend_wait);
+                                        item.setFriendState(200);
+                                    }
+                                    else{
+                                        Toast.makeText(mContext, "에러!", 100).show();
+                                    }
+                                }
+                                catch (JSONException e) {
+                                    Log.d("Eval_SendEvalData", e.getMessage().toString());
+                                }
+                            }
+                            else{
+                                Toast.makeText(mContext, "에러!", 100).show();
+                            }
+                        }
+                    });
+                }
+            }
+        }
+        return v;
+    }
+}

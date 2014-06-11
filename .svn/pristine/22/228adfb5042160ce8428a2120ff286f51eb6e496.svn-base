@@ -1,0 +1,195 @@
+package com.kimtajo.guideMatching;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.TextView;
+import com.kimtajo.guideMatching.R;
+import com.kimtajo.guideMatching.myListView;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+
+/**
+ * Created by Hellomath on 2014. 4. 7..
+ */
+public class myListAdapter extends ArrayAdapter<myListView> {
+    private ArrayList<myListView> items;
+    Context mContext;
+    public myListAdapter(Context context, int textViewResourceId, ArrayList<myListView> items){
+        super(context, textViewResourceId, items);
+        this.items = items;
+        mContext = context;
+
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        View v = convertView;
+        if(v == null){
+            LayoutInflater vi = LayoutInflater.from(mContext.getApplicationContext());
+            v = vi.inflate(R.layout.list_item, null);
+
+        }
+        myListView item = items.get(position);
+        if(item != null){
+            TextView name = (TextView)v.findViewById(R.id.itemName);
+            TextView tel = (TextView)v.findViewById(R.id.itemTel);
+            TextView eval_cnt = (TextView)v.findViewById(R.id.itemEvalCount);
+            ImageView thumbnail = (ImageView)v.findViewById(R.id.itemThumb);
+            RatingBar eval_point = (RatingBar)v.findViewById(R.id.itemEvalPoint);
+
+            if(name != null) name.setText(item.getName());
+            if(tel != null) tel.setText(item.getTelNo());
+            if(eval_cnt != null) eval_cnt.setText("("+item.getEvalCount()+")");
+            if(eval_point != null) eval_point.setRating((float)item.getEvalPoint());
+            if(thumbnail != null){
+                try {
+                    URL myUrl = new URL(item.getThumbUrl());
+                    Log.d("item image", item.getThumbUrl());
+                    InputStream inputStream = (InputStream)myUrl.getContent();
+                    Drawable drawable = Drawable.createFromStream(inputStream, null);
+                    thumbnail.setImageDrawable(drawable);
+                } catch (MalformedURLException e) {
+                    Log.d("item image", e.getMessage().toString());
+                } catch (IOException e) {
+                    Log.d("item image", e.getMessage().toString());
+                }
+
+            }
+
+            //TextView name = (TextView)v.findViewById(R.id.itemName);
+        }
+        return v;
+    }
+
+
+
+}
+
+/*
+public class myListAdapter extends ArrayAdapter<myListView> {
+
+}
+    ArrayList<myListView> rows;
+    ArrayList<String> thumbsDataList;
+    ArrayList<String> thumbsIDList;
+    Context mContext;
+    final static String server = "http://hellomath.iptime.org/guideMatching"; // server url
+
+    public myListAdapter(Context context, ArrayList<myListView> list) {
+        super(context, R.layout.list_item);
+        mContext = context;
+        rows = list;
+    }
+    @Override
+    public int getCount() {
+        // TODO Auto-generated method stub
+        return rows.size();
+    }
+
+    @Override
+    public long getItemId(int position) {
+        // TODO Auto-generated method stub
+        return getItem(position).getTypeId();
+    }
+
+    @Override
+    public void remove(myListView object) {
+        // TODO Auto-generated method stub
+
+        super.remove(object);
+        Log.d("김혜성", "remove" + object.getTypeId());
+
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder vh;
+        myListView mylistView = rows.get(position);
+        View v = convertView;
+
+
+        if(v == null)
+        {
+
+            LayoutInflater inflater = LayoutInflater.from(mContext.getApplicationContext());
+            v = inflater.inflate(R.layout.list_item, null);
+
+            vh = new ViewHolder();
+
+            //vh.imgview=(ImageView)v.findViewById(R.id.img_photo);
+
+            vh.itemName=(TextView)v.findViewById(R.id.itemName);
+            vh.itemTel=(TextView)v.findViewById(R.id.itemTel);
+            vh.itemEvalCount=(TextView)v.findViewById(R.id.itemEvalCount);
+            vh.itemEvalPoint=(RatingBar)v.findViewById(R.id.itemEvalPoint);
+
+            v.setTag(vh);
+        }
+
+        else{
+            vh = (ViewHolder)v.getTag();
+        }
+
+
+        vh.itemThumb=(ImageView)v.findViewById(R.id.itemThumb);
+        vh.itemName.setText(mylistView.getName());
+        vh.itemTel.setText(mylistView.getTelNo());
+        char type = mylistView.getType();
+        if(type != 'G'){
+            BitmapFactory.Options op = new BitmapFactory.Options();
+            op.inSampleSize = 8;
+
+            if( mylistView.getThumbUrl().length() <= 0 )
+            {
+                Resources res = mContext.getResources();
+
+                Bitmap bit = BitmapFactory.decodeResource(res, R.drawable.img_photo_noimg);
+                vh.itemThumb.setImageBitmap(bit);
+
+            }
+
+            else if(mylistView.getThumbUrl().length() > 0)
+            {
+                String imgUrl = server+"/img/"; // 이미지 url 설정
+                Bitmap bit = BitmapFactory.decodeFile(String.valueOf(imgUrl+mylistView.getThumbUrl()));
+
+                if(bit!=null)
+                    vh.itemThumb.setImageBitmap(bit);
+
+                else
+                {
+                    ImageDownloader imgdown = new ImageDownloader();
+                    imgdown.download(String.valueOf(imgUrl+mylistView.getThumbUrl()), vh.itemThumb, mContext); // 비동기식으로 화면 처리
+                }
+
+
+            }
+        }
+        return v;
+    }
+}
+class ViewHolder{
+    ImageView itemThumb;
+    TextView itemName, itemTel, itemEvalCount;
+    RatingBar itemEvalPoint;
+}
+*/
+class ViewHolder{
+    ImageView itemThumb;
+    TextView itemName, itemTel, itemEvalCount;
+    RatingBar itemEvalPoint;
+}
